@@ -1,7 +1,7 @@
 .vim
 ====
 
-I use this repository to rapidly restore my vim settings and plugins. I can simply go to my home directory on any machine and run the following.
+I use this repository to rapidly restore my vim settings and plugins. I can simply go to my home directory on any machine and run the following:
 
 > $ cd ~  
 > $ git init  
