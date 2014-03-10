@@ -17,4 +17,4 @@ All vim plugins are added to the .vim/bundle/ directory as git submodules that p
 
 > $ git submodule update
 
-![](http://i.imgur.com/1VakzQZ.gif)
+[![](http://i.imgur.com/1VakzQZ.gif)](http://i.imgur.com/1VakzQZ.gif)
