@@ -1,6 +1,3 @@
-[submodule ".vim/bundle/csapprox"]
-	path = .vim/bundle/csapprox
-	url = https://github.com/godlygeek/csapprox.git
 [submodule ".vim/bundle/vim-fugitive"]
 	path = .vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
