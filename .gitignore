@@ -3,5 +3,5 @@
 
 # Except these:
 !.gitignore
-!.vim
+!.vim/
 !.vimrc
