@@ -7,7 +7,6 @@ I use this repository to rapidly restore my vim settings and plugins. I can simp
 > $ git init  
 > $ git remote add origin https://github.com/chevex/.vim.git  
 > $ git fetch  
-> $ git checkout -t origin/master  
 > $ git submodule init  
 > $ git submodule update
 
