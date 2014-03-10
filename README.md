@@ -16,3 +16,5 @@ It's slightly more involved than a simple git clone because git gets mad about c
 All vim plugins are added to the .vim/bundle/ directory as git submodules that point to their original github respositories. This makes it super easy to keep all your plugins up to date.
 
 > $ git submodule update
+
+![](http://i.imgur.com/1VakzQZ.gif)
