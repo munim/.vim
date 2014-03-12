@@ -23,4 +23,8 @@ All vim plugins are added to the .vim/bundle/ directory as git submodules that p
 
 > $ git submodule update
 
-[![](http://i.imgur.com/1VakzQZ.gif)](http://i.imgur.com/1VakzQZ.gif)
+Example:
+
+[![](http://i.imgur.com/bFQLUB4.gif)](http://i.imgur.com/bFQLUB4.gif)
+
+I simply pasted the one-liner from above into the terminal. After a minute of letting git update everything all my vim settings/plugins have been restored and I hardly had to do a thing!
