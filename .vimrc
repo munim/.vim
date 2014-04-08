@@ -28,6 +28,8 @@ set matchtime=2
 " Show line numbers by default.
 set number
 
+set fileencoding=utf-8
+
 " Allow vim to recognize file types.
 filetype on
 
@@ -65,6 +67,9 @@ set tabstop=4
 
 " Set expandtab by default.
 set expandtab
+
+" Set laststatus to 2.
+set laststatus=2
 
 "*******************************************************
 
