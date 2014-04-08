@@ -28,7 +28,13 @@ set matchtime=2
 " Show line numbers by default.
 set number
 
+" Set encoding.
 set encoding=utf-8
+
+" Set font.
+if has('gui_running')
+  set guifont=Ubuntu\ Mono\ derivative\ Powerline:h12
+endif
 
 " Allow vim to recognize file types.
 filetype on
@@ -175,6 +181,16 @@ noremap <F2> :retab!<CR>
 " Invoke pathogen to load plugins.
 execute pathogen#infect()
 
+"-=-=-= AIRLINE/PROMPTLINE =-=-=-
+
+" Populate powerline symbols.
+let g:airline_powerline_fonts = 1
+
+let g:promptline_preset = {
+    \'a' : [ promptline#slices#host() ],
+    \'b' : [ promptline#slices#user() ],
+    \'c' : [ promptline#slices#cwd() ],
+    \'y' : [ promptline#slices#vcs_branch(), promptline#slices#git_status() ]}
 
 "-=-=-= INDENT GUIDES =-=-=-
 
