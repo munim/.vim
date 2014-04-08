@@ -28,7 +28,7 @@ set matchtime=2
 " Show line numbers by default.
 set number
 
-set fileencoding=utf-8
+set encoding=utf-8
 
 " Allow vim to recognize file types.
 filetype on
