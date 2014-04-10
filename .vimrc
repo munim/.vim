@@ -33,7 +33,7 @@ set encoding=utf-8
 
 " Set font.
 if has('gui_running')
-  set guifont=Ubuntu\ Mono\ derivative\ Powerline:h12
+    set guifont=Sauce\ Code\ Powerline:h12
 endif
 
 " Allow vim to recognize file types.
