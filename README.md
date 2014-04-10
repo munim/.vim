@@ -21,7 +21,11 @@ It's slightly more involved than a simple git clone because git gets mad about c
 
 All vim plugins are added to the .vim/bundle/ directory as git submodules that point to their original github respositories. This makes it super easy to keep all your plugins up to date.
 
-> $ git submodule update
+> $ git submodule foreach pull origin master
+
+That will iterate over all the plugin submodules and get the latest from their repositories. After that you'll just want to commit the updates to your main repository, and push them up to your fork if you made one.
+
+> $ git add . && git commit -m "Update plugins." && git push origin master
 
 Example:
 
