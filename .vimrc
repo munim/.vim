@@ -141,20 +141,20 @@ map <C-L> <C-W>l
 nnoremap <CR> :noh<CR>
 
 " Map uppercase movement keys to macro versions of themselves in normal and visual mode.
-nnoremap J 15j
-vnoremap J 15j
-nnoremap K 15k
-vnoremap K 15k
-nnoremap H 10h
-vnoremap H 10h
-nnoremap L 10l
-vnoremap L 10l
+"nnoremap J 15j
+"vnoremap J 15j
+"nnoremap K 15k
+"vnoremap K 15k
+"nnoremap H 10h
+"vnoremap H 10h
+"nnoremap L 10l
+"vnoremap L 10l
 
 " Remap uppercase movement key functions to g+movement key.
-nnoremap gj J
-nnoremap gk K
-nnoremap gh H
-nnoremap gl L
+"nnoremap gj J
+"nnoremap gk K
+"nnoremap gh H
+"nnoremap gl L
 
 " Force sync current file to vm
 noremap <F4> :!~/bin/syn %<CR>
