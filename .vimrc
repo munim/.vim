@@ -13,9 +13,6 @@ set autochdir
 " Enable syntax highlighting.
 syntax on
 
-" Instruct VIM that our background is dark in appear.
-set background=dark
-
 " Set startup colorscheme.
 colorscheme jellybeans
 
@@ -198,13 +195,18 @@ let g:promptline_preset = {
 "-=-=-= INDENT GUIDES =-=-=-
 
 " Tell indent-guides plugin to start showing guides at 2 levels of indentation.
-" let g:indent_guides_start_level = 2
+let g:indent_guides_start_level = 1
 
 " Tell indent-guides plugin to draw guides one character in width.
 let g:indent_guides_guide_size = 1
 
 " Tell indent-guides to startup with VIM.
 let g:indent_guides_enable_on_vim_startup = 1
+
+" Set background colors manually since I rarely change my color scheme.
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=1002
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=1003
 
 "-=-=-= CTRLP =-=-=-
 
