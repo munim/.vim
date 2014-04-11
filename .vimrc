@@ -1,6 +1,9 @@
 "*******************************************************
 " SETTINGS
 
+" Set mouse mode.
+set mouse=a
+
 " Ensure we are out of crappy vi compatible mode.
 set nocompatible
 
