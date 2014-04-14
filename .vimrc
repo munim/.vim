@@ -79,11 +79,6 @@ set laststatus=2
 
 "*******************************************************
 
-
-
-
-
-"*******************************************************
 " FUNCTIONS
 
 " Allow toggling between tabs and spaces.
@@ -99,11 +94,6 @@ endfunction
 
 "*******************************************************
 
-
-
-
-
-"*******************************************************
 " COMMANDS
 
 " LN will toggle line numbers on or off.
@@ -123,11 +113,6 @@ command! W w !sudo tee % > /dev/null
 
 "*******************************************************
 
-
-
-
-
-"*******************************************************
 " KEY MAPPINGS
 
 " Map ctrl+movement keys to ctrl+w followed by the movement key.
@@ -172,12 +157,6 @@ noremap <F2> :retab!<CR>
 
 "*******************************************************
 
-
-
-
-
-
-"*******************************************************
 " PLUGIN SETTINGS
 
 " Tell pathogen not to load these plugins.
