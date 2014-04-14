@@ -73,3 +73,6 @@
 [submodule ".vim/bundle/promptline.vim"]
 	path = .vim/bundle/promptline.vim
 	url = https://github.com/edkolev/promptline.vim.git
+[submodule ".vim/bundle/YouCompleteMe"]
+	path = .vim/bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
