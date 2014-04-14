@@ -141,9 +141,9 @@ map <C-L> <C-W>l
 nnoremap <CR> :noh<CR>
 
 """"" I feel like the following key mappings are a brute force way of navigating the document
-without using your eyes so I've temporarily commented them out while I try to learn some
-additional buffer movement and cursor movement commands in an attempt to phase the need for
-these "macro keys" out. """""
+""""" without using your eyes so I've temporarily commented them out while I try to learn some
+""""" additional buffer movement and cursor movement commands in an attempt to phase the need
+""""" for these "macro keys" out.
 
 " Map uppercase movement keys to macro versions of themselves in normal and visual mode.
 "nnoremap J 15j
