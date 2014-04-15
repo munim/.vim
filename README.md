@@ -17,6 +17,10 @@ If you want a one-liner:
 $ git clone https://github.com/chevex/.vim.git ~/.vim && cd ~/.vim && git submodule init && git submodule update && ln -s .vim/.vimrc ~/.vimrc
 ```
 
+![](http://i.imgur.com/acPSGtG.gif)
+
+I just pasted the one-liner from above and went from a bare vim configuration with no .vimrc and no plugins to everything being configured.
+
 All vim plugins are added to the .vim/bundle/ directory as git submodules that point to their original github respositories. This makes it super easy to keep all your plugins up to date.
 
 > $ git submodule foreach git pull origin master
