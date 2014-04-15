@@ -211,7 +211,7 @@ let g:ctrlp_by_filename = 1
 noremap <C-n> :NERDTreeToggle<CR>
 
 " Open NERDTree window at startup if no file is open.
-autocmd vimenter * if !argc() | NERDTree | endif
+"autocmd vimenter * if !argc() | NERDTree | endif
 
 " Close VIM if NERDTree is the only window left open.
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
