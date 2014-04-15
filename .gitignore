@@ -1,7 +1,0 @@
-# Ignore everything in home directory.
-*
-
-# Except these:
-!.gitignore
-!.vim/
-!.vimrc
