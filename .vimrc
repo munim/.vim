@@ -172,7 +172,7 @@ let g:airline_powerline_fonts = 1
 
 let g:promptline_preset = {
     \'a' : [ promptline#slices#user() ],
-    \'c' : [ promptline#slices#cwd({ 'dir_limit':1 }) ],
+    \'c' : [ promptline#slices#cwd() ],
     \'y' : [ promptline#slices#vcs_branch(), promptline#slices#git_status() ]}
     "\'b' : [ promptline#slices#host() ],
 
