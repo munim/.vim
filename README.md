@@ -16,9 +16,17 @@ If you want a one-liner:
 $ git clone https://github.com/chevex/.vim.git ~/.vim && cd ~/.vim && git submodule init && git submodule update
 ```
 
+Most of the latest versions of vim have learned the ability to look in `~/.vim/vimrc` for your vim configuration settings. If vim isn't finding your settings then run the following to create a symlink.
+
+```bash
+$ ln -s ~/.vim/vimrc ~/.vimrc
+```
+
+Demo:
+
 ![](http://i.imgur.com/acPSGtG.gif)
 
-I just pasted the one-liner from above and went from a bare vim configuration with no .vimrc and no plugins to everything being configured. The one-liner used in the above .gif includes a symlink for `.vimrc` at the end, however that has been updated to use the newer conventions of storing vim config as `.vim/vimrc`.
+I just pasted the one-liner from above and went from a bare vim configuration with no .vimrc and no plugins to everything being configured.
 
 All vim plugins are added to the .vim/bundle/ directory as git submodules that point to their original github respositories. This makes it super easy to keep all your plugins up to date.
 
