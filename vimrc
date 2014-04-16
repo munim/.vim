@@ -2,7 +2,7 @@
 " SETTINGS
 
 " Set mouse mode.
-set mouse=a
+" set mouse=a
 
 " Ensure we are out of crappy vi compatible mode.
 set nocompatible
@@ -98,12 +98,6 @@ endfunction
 
 " LN will toggle line numbers on or off.
 command! LN set nonumber!
-
-" NU will run npm update on the working directory.
-command! NU !npm update
-
-" NI will install an npm module specified by name.
-command! NI !npm install
 
 " RC will re-source this .vimrc file.
 command! RC :source $MYVIMRC
