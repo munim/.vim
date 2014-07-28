@@ -63,13 +63,13 @@ endif
 au BufWritePost /Users/chford/adobe-code/* silent exec '!syn %'|redraw!
 
 " Set softtabstop to 4 spaces.
-set softtabstop=4
+set softtabstop=2
 
 " Set shiftwidth to 4 spaces.
-set shiftwidth=4
+set shiftwidth=2
 
 " Set tabstop to 4 spaces.
-set tabstop=4
+set tabstop=2
 
 " Set expandtab by default.
 set expandtab
@@ -82,15 +82,15 @@ set laststatus=2
 " FUNCTIONS
 
 " Allow toggling between tabs and spaces.
-function! TabToggle()
-    if &expandtab
-        set noexpandtab
-        echo "Tab Mode Active"
-    else
-        set expandtab
-        echo "Space Mode Active"
-    endif
-endfunction
+"function! TabToggle()
+    "if &expandtab
+        "set noexpandtab
+        "echo "Tab Mode Active"
+    "else
+        "set expandtab
+        "echo "Space Mode Active"
+    "endif
+"endfunction
 
 "*******************************************************
 
