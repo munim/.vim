@@ -116,6 +116,14 @@ map <C-K> <C-W>k
 map <C-H> <C-W>h
 map <C-L> <C-W>l
 
+" Map alt+movement keys to ctrl+w followed by the movement key.
+" Makes moving windows much simpler.
+map ∆ <C-W>J
+map ˚ <C-W>K
+map ˙ <C-W>H
+map ¬ <C-W>L
+
+
 " When pressing enter it will also run :noh to turn off highlights from previous search.
 nnoremap <CR> :noh<CR>
 
@@ -158,6 +166,11 @@ noremap <F2> :retab!<CR>
 
 " Invoke pathogen to load plugins.
 execute pathogen#infect()
+
+"-=-=-= localvimrc =-=-=-
+
+" Don't ask when sourcing .lvimrc files.
+let g:localvimrc_ask = 0
 
 "-=-=-= AIRLINE/PROMPTLINE =-=-=-
 
