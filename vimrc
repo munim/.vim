@@ -123,6 +123,11 @@ map ˚ <C-W>K
 map ˙ <C-W>H
 map ¬ <C-W>L
 
+" Map arrow keys to window resize commands.
+map <Right> 5<C-W>>
+map <Left> 5<C-W><
+map <Up> 5<C-W>+
+map <Down> 5<C-W>-
 
 " When pressing enter it will also run :noh to turn off highlights from previous search.
 nnoremap <CR> :noh<CR>
