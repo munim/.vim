@@ -217,6 +217,9 @@ noremap <C-a> :CtrlP ~/adobe-code/<CR>
 " matching anyway.
 let g:ctrlp_by_filename = 1
 
+" Increase the max_files limit for ctrlp so I can search the adobe directory.
+let g:ctrlp_max_files = 100000
+
 "-=-=-= NERDTree =-=-=-
 
 " Ctrl+n will toggle NERDTree window.
