@@ -206,6 +206,21 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=1003
 
 "-=-=-= CTRLP =-=-=-
 
+" Setup ctrlp (& vim) to use ag search.
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
+
+" Don't update the ctrlp window until I'm done typing.
+let g:ctrlp_lazy_update = 1
+
 " Tell ctrlp plugin to ignore the specified patterns.
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|dist/*'
 
@@ -218,7 +233,10 @@ noremap <C-a> :CtrlP ~/adobe-code/<CR>
 let g:ctrlp_by_filename = 1
 
 " Increase the max_files limit for ctrlp so I can search the adobe directory.
-let g:ctrlp_max_files = 100000
+let g:ctrlp_max_files = 0 " Zero means unlimited.
+
+" Increase the maximum depth that ctrlp will search through the directory tree.
+let g:ctrlp_max_depth = 100
 
 "-=-=-= NERDTree =-=-=-
 
