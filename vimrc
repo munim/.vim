@@ -157,10 +157,12 @@ nnoremap <CR> :noh<CR>
 noremap <F4> :!~/bin/syn %<CR>
 
 " F1 will toggle TAB/Space modes.
-noremap <F1> :call TabToggle()<CR>
+"noremap <F1> :call TabToggle()<CR>
 
 " F2 will use the current tab settings to retab the whole file.
 noremap <F2> :retab!<CR>
+
+noremap gw :Autoformat<CR><CR>
 
 "*******************************************************
 
