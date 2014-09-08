@@ -62,35 +62,17 @@ endif
 " Whenever a buffer is written to a file run the syn script to synchronize with VM.
 au BufWritePost /Users/chford/adobe-code/* silent exec '!syn %'|redraw!
 
-" Set softtabstop to 4 spaces.
+" Set softtabstop to 2 spaces.
 set softtabstop=2
 
-" Set shiftwidth to 4 spaces.
+" Set shiftwidth to 2 spaces.
 set shiftwidth=2
 
-" Set tabstop to 4 spaces.
+" Set tabstop to 2 spaces.
 set tabstop=2
 
 " Set expandtab by default.
 set expandtab
-
-" Set laststatus to 2.
-set laststatus=2
-
-"*******************************************************
-
-" FUNCTIONS
-
-" Allow toggling between tabs and spaces.
-"function! TabToggle()
-    "if &expandtab
-        "set noexpandtab
-        "echo "Tab Mode Active"
-    "else
-        "set expandtab
-        "echo "Space Mode Active"
-    "endif
-"endfunction
 
 "*******************************************************
 
@@ -156,13 +138,12 @@ nnoremap <CR> :noh<CR>
 " Force sync current file to vm
 noremap <F4> :!~/bin/syn %<CR>
 
-" F1 will toggle TAB/Space modes.
-"noremap <F1> :call TabToggle()<CR>
-
 " F2 will use the current tab settings to retab the whole file.
 noremap <F2> :retab!<CR>
 
 noremap gw :Autoformat<CR><CR>
+
+imap <C-c> <CR><Esc>O
 
 "*******************************************************
 
