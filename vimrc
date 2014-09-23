@@ -11,10 +11,10 @@ set nocompatible
 set autochdir
 
 " Enable syntax highlighting.
-syntax on
+syntax enable
 
 " Set startup colorscheme.
-colorscheme jellybeans
+colorscheme monokai
 
 " Don't let text wrap when it hits the edge of the screen.
 set nowrap
@@ -62,14 +62,16 @@ endif
 " Whenever a buffer is written to a file run the syn script to synchronize with VM.
 au BufWritePost /Users/chford/adobe-code/* silent exec '!syn %'|redraw!
 
-" Set softtabstop to 2 spaces.
-set softtabstop=2
+set smartindent
 
-" Set shiftwidth to 2 spaces.
-set shiftwidth=2
+" Set softtabstop to 4 spaces.
+set softtabstop=4
 
-" Set tabstop to 2 spaces.
-set tabstop=2
+" Set shiftwidth to 4 spaces.
+set shiftwidth=4
+
+" Set tabstop to 4 spaces.
+set tabstop=4
 
 " Set expandtab by default.
 set expandtab
