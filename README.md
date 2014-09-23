@@ -4,7 +4,7 @@
 I use this repository to rapidly restore my vim settings and plugins. I can simply go to my home directory on any machine and run the following:
 
 ```bash
-$ git clone https://github.com/chevex/.vim.git ~/.vim
+$ git clone https://github.com/munim/.vim.git ~/.vim
 $ cd ~/.vim
 $ git submodule init
 $ git submodule update
@@ -13,7 +13,7 @@ $ git submodule update
 If you want a one-liner:
 
 ```bash
-$ git clone https://github.com/chevex/.vim.git ~/.vim && cd ~/.vim && git submodule init && git submodule update
+$ git clone https://github.com/munim/.vim.git ~/.vim && cd ~/.vim && git submodule init && git submodule update
 ```
 
 Most of the latest versions of vim have learned the ability to look in `~/.vim/vimrc` for your vim configuration settings. If vim isn't finding your settings then run the following to create a symlink.
